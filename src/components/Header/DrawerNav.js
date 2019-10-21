@@ -21,7 +21,7 @@ const DrawerNav = ({ categories, currentUser, open, closeDrawer }) => {
     >
       <List>
         <ListItemLink
-          to={currentUser ? '/users' : '/login'}
+          to={currentUser ? '/account' : '/account/login'}
           primary={currentUser ? `Hi ${currentUser.firstName}!` : 'Hi! Sign in'}
           icon={<AccountIcon />}
           onClick={closeDrawer}

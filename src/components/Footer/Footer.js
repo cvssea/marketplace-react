@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 const Footer = props => {
   const classes = useStyles();
   return (
-    <AppBar position="static" className={classes.appBar}>
+    <AppBar position="sticky" className={classes.appBar}>
       <Toolbar>
         <List>
           <ListItem>

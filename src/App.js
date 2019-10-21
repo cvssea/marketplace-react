@@ -35,7 +35,7 @@ const App = ({
   return (
     <>
       <Header />
-      <Route path="/login" render={props => <AuthPage {...props} />} />
+      <Route exact path="/login" render={props => <AuthPage {...props} />} />
       <Route path="/search" render={() => <SearchPage />} />
       <Route exact path="/" render={() => <HomePage />} />
       {categories &&
